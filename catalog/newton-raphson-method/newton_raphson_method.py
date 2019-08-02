@@ -11,8 +11,8 @@ def newton_raphson(f, x0, tol):
 
     while (abs(f(xAprox[-1])) > tol):
         xk = xAprox[-1]
-        f_derivative = misc.derivative(f, xk, dx=1e-6)
-        xAprox = np.append(xAprox, xk - f(xk)/f_derivative)
+        df = misc.derivative(f, xk, dx=1e-6)
+        xAprox = np.append(xAprox, xk - f(xk)/df)
         _iter += 1
 
     return xAprox, _iter
