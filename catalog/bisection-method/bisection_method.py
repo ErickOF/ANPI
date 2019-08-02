@@ -3,22 +3,22 @@ import math
 
 # Bisection method
 def bisection(a, b, tol, f):
-	if (f(a) * f(b) < 0):
-		xAprox = (a + b) / 2
-		_iter = 0
+    if (f(a) * f(b) < 0):
+        xAprox = (a + b) / 2
+        _iter = 0
 
-		while (abs(f(xAprox)) > tol):
-			if (f(a) * f(xAprox) < 0):
-				b = xAprox
-			else:
-				a = xAprox
+        while (abs(f(xAprox)) > tol):
+            if (f(a) * f(xAprox) < 0):
+                b = xAprox
+            else:
+                a = xAprox
 
-			xAprox = (a + b) / 2
-			_iter += 1
-	else:
-		raise ValueError("Condiciones no garantizan el cero de la función");
+            xAprox = (a + b) / 2
+            _iter += 1
+    else:
+        raise ValueError("Condiciones no garantizan el cero de la función");
 
-	return xAprox, _iter;
+    return xAprox, _iter;
 
 
 if __name__ == '__main__':
