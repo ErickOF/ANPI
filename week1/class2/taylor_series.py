@@ -1,6 +1,7 @@
 import math
 from math import factorial
 
+
 def e(x, n=50):
     e_aprox = 0
 
