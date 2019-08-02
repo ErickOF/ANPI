@@ -16,9 +16,9 @@ def bisection(a, b, tol, f):
             xAprox = (a + b) / 2
             _iter += 1
     else:
-        raise ValueError("Condiciones no garantizan el cero de la función");
+        raise ValueError("Condiciones no garantizan el cero de la función")
 
-    return xAprox, _iter;
+    return xAprox, _iter
 
 
 if __name__ == '__main__':
