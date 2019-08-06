@@ -19,7 +19,7 @@ function [xAprox, iter] = bisection (a, b, tol, f)
       iter = iter + 1;
     endwhile
   else
-    error("Condiciones no garantizan el cero de la funci�n");
+    error("Condiciones no garantizan el cero de la función");
   endif
 
   return;
