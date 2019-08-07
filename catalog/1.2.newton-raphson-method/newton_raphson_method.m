@@ -6,20 +6,20 @@ pkg load symbolic;
 
 % Newton Raphson method
 function [xAprox, iter] = newtonRaphson (func, x0, tol)
-  xAprox(1) = x0;
-  iter = 0;
+    xAprox(1) = x0;
+    iter = 0;
 
-  syms f(x);
-  f(x) = func;
-  
-  while (abs(func(xAprox(end))) > tol)
-    xk = xAprox(end);
-    df = diff(f);
-    xAprox(end + 1) = xk - func(xk) / double(df(xk));
-    iter = iter + 1;
-  endwhile
+    syms f(x);
+    f(x) = func;
+    
+    while (abs(func(xAprox(end))) > tol)
+        xk = xAprox(end);
+        df = diff(f);
+        xAprox(end + 1) = xk - func(xk) / double(df(xk));
+        iter = iter + 1;
+    endwhile
 
-  return;
+    return;
 endfunction
 
 
