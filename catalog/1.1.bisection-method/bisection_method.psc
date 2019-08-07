@@ -1,7 +1,5 @@
 // Función a la cual se le aplicará el método
 Funcion valor <- f(x)
-    // Se define la constante e
-    e <- 2.7182818284590452353602875
     valor <- e^x - x - 2
 FinFuncion
 
@@ -21,12 +19,12 @@ Funcion biseccion(a, b, tol)
             xAprox <- (a + b) / 2
             iter <- iter + 1
         Fin Mientras
+
+        Escribir  "xAprox = " + ConvertirATexto(xAprox)
+        Escribir  "Iteraciones = " + ConvertirATexto(iter)
     SiNo
-        Escribir "Condiciones no garantizan el cero de la funci�n"
+        Escribir "Condiciones no garantizan el cero de la función"
     Fin Si
-    
-    Escribir  "xAprox = " + ConvertirATexto(xAprox)
-    Escribir  "Iteraciones = " + ConvertirATexto(iter)
 Fin Funcion
 
 // Prueba
