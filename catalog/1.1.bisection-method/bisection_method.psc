@@ -1,5 +1,6 @@
 // Función a la cual se le aplicará el método
 Funcion valor <- f(x)
+    e <- 2.718281828459045235360
     valor <- e^x - x - 2
 FinFuncion
 
