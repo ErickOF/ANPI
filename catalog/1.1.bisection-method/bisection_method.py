@@ -26,5 +26,5 @@ if __name__ == '__main__':
     b = 2
     tol = 0.1
     func = lambda x: math.e**x - x - 2
-    xAprox, _iter = bisection (a, b, tol, func)
+    xAprox, _iter = bisection(a, b, tol, func)
     print('xAprox = {}\nIteraciones = {}'.format(xAprox, _iter))
