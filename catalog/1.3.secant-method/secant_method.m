@@ -2,8 +2,8 @@ clear;
 close all;
 
 
-% Bisection method
-function [xk, iter] = bisection (xk, xk_1, tol, f)
+% Secant method
+function [xk, iter] = secant (xk, xk_1, tol, f)
     iter = 1;
 
     while (abs(xk - xk_1) / abs(xk)) > tol
@@ -22,5 +22,5 @@ x0 = 0;
 x1 = 1;
 tol = 0.01;
 func = @(x) e^(-x^2) - x;
-[xk, iter] = bisection (x0, x1, tol, func);
+[xk, iter] = secant (x0, x1, tol, func);
 printf('xk = %f\nIteraciones = %i', xk, iter);
