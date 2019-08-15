@@ -11,7 +11,7 @@ function [xAprox, iter] = bisection (a, b, tol, f)
     @param f - funcion a la cual se le aplicara el algoritmo
 
     @return xAprox - valor aproximado de x
-    @retrun iter - iteraciones necesarias para aproximar x
+    @return iter - iteraciones necesarias para aproximar x
     %}
 
     % Validar la condicion para encontrar el cero
