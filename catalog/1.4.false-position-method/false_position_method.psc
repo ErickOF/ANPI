@@ -40,7 +40,7 @@ Funcion falsaPosicion(a, b, tol)
         Escribir  "xk = " + ConvertirATexto(xk)
         Escribir  "Iteraciones = " + ConvertirATexto(iter)
     SiNo
-        Escribir "Condiciones no garantizan el cero de la funci�n"
+        Escribir "Condiciones no garantizan el cero de la función"
     Fin Si
 Fin Funcion
 
