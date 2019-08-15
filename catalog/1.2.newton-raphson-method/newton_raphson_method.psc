@@ -32,7 +32,7 @@ Fin Funcion
 // Prueba
 Proceso main
     // Valor inicial
-    x0 <- 3 / 4;
+    x0 <- 3 / 4
     // Tolerancia
     tol = 0.0000000001
     // Llamado de la funcion
