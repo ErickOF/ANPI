@@ -3,8 +3,8 @@ Funcion valor <- f(x)
     valor <- cos(x) - x
 FinFuncion
 
-Funcion falsePosition(a, b, tol)
-    // Metodo de la False Position
+Funcion falsaPosicion(a, b, tol)
+    // Metodo de la Falsa Position
     // @param a - limite inferior del intervalo
     // @param b - limite superior del intervalo
     // @param tol - tolerencia del algoritmo
@@ -52,5 +52,5 @@ Proceso main
     // Tolerencia
     tol <- 0.00001
     // Llamado de la funcion
-    falsePosition(a, b, tol)
+    falsaPosicion(a, b, tol)
 FinProceso
